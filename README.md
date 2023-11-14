@@ -19,8 +19,7 @@ In this project, you will create a full stack application with React and AWS tha
 - Add your infrastructure code in the `main.tf` file
 - Add your function code for the `get-obituaries-<your-ucid>` function in the [`functions/get-obituaries/main.py`](functions/get-obituaries/main.py) file
 - Add your function code for the `create-obituary-<your-ucid>` function in the [`functions/create-obituary/main.py`](functions/create-obituary/main.py) file
-- Push your changes to the `main` branch before the deadline to be graded
-- This assignment has a DEMO component that's 50% of the grade
+
 
 ## :page_with_curl: Notes
 
