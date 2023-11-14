@@ -1,8 +1,7 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/o-xnQ34X)
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-8d59dc4de5201274e310e4c54b9627a8934c3b88527886e3b421487c677d23eb.svg)](https://classroom.github.com/a/o-xnQ34X)
+
 # The Last Show
 
-In this assignment, you will create a full stack application with React and AWS that generates obituaries for people (fictional or otherwise). You will use [ChatGPT](https://openai.com/blog/chatgpt) to generate an obituary, [Amazon Polly](https://aws.amazon.com/polly/) to turn the obituary into speech, and [Cloudinary](https://cloudinary.com/) to store the speech and a picture of the deceased (may they rest in peace).
+In this project, you will create a full stack application with React and AWS that generates obituaries for people (fictional or otherwise). You will use [ChatGPT](https://openai.com/blog/chatgpt) to generate an obituary, [Amazon Polly](https://aws.amazon.com/polly/) to turn the obituary into speech, and [Cloudinary](https://cloudinary.com/) to store the speech and a picture of the deceased (may they rest in peace).
 
 ## Architecture Overview
 
@@ -52,15 +51,7 @@ In this assignment, you will create a full stack application with React and AWS 
 - The Demo doesn't use any external library for the front-end
 - In order to get the full mark, you need to **DEMO your work in PERSON**. You could either demo it to a TA or the instructor. Demo is 50% of the assignment
 
-## :couple: Group Assignment
 
-In case you're doing the assignment as part of a group, pay attention to the following so you won't lose any points:
-
-- Use the UCID of one team member to name the Lambdas, and the other one to name the DynamoDB table
-- Put the names and UCIDs of the team members in the [Team-Members](./Team-Members.md) file
-- Both members must commit to the group repo. If a student has no commit after the deadline, their grade will be Zero. Things like "I sent the code over TikTok or Discord" are not acceptable. **No commmit = No grade**
-- Try to split the work as evenly as possible between team members
-- Both members must be present for the Demo. If you're not present, your grade will be Zero for the Demo
 
 ## :heavy_check_mark: Things you may change
 
@@ -82,12 +73,3 @@ In case you're doing the assignment as part of a group, pay attention to the fol
 - ChatGPT has a free tier. If you're careful, you won't have to pay anything. If you're over the free tier, you could create a new free account (will give you new API Key)
 
 
-## :heavy_plus_sign: Bonus Marks
-- You can grab 10 extra points if you orchestrate different steps of the `create-obituary` Lambda function with [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html). You would have to orchestrate 4 Lambda functions:
-  - `generate-obituary` that uses ChatGPT
-  - `read-obituary` that uses Amazon Polly
-  - `store-files` that uses Cloudinary to store both the picture and speech
-  - `save-item` that uses DynamoDB to store a new item
-- You must create all the infra using Terraform
-- Step Functions won't send you a response right away, but the app still needs to find out when the workflow is finished and add a new obituary to the front-end
-- No partial implementation is considered. If the implementation doesn't work properly from beginning to end, there will be no bonus marks for the assignment
