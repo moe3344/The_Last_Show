@@ -13,7 +13,6 @@ In this project, you will create a full stack application with React and AWS tha
 
 ## :foot: Steps
 
-- Make sure to see the demo video on D2L
 - Clone the repo
 - Make sure you're inside the root directory of the repo and then run `npm install` to install all the necessary packages
 - Run `npm start` and you should be able to see the page open up on your default browser
